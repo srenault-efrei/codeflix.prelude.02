@@ -14,6 +14,7 @@ const invert = require('./exo015')
 const omit = require('./exo017')
 const has = require('./exo018')
 const size = require('./exo019')
+const sample = require('./exo019')
 const map = require('./exo021')
 
 // console.log("first :");
@@ -78,9 +79,13 @@ const map = require('./exo021')
 // console.log("has :");
 // console.log(has({ a: 1, b: 2, c: 3 }, "3"))
 
-console.log("size :");
-console.log(size([1,2,3,4,5]))
-console.log(size({one: 1, two: 2, three: 3})    )
+// console.log("size :");
+// console.log(size([1,2,3,4,5]))
+// console.log(size({one: 1, two: 2, three: 3})    )
+
+console.log("sample :");
+console.log(sample([1,2,3,4,5,6]))
+
 
 
 
