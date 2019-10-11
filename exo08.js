@@ -6,11 +6,11 @@ module.exports = function intersection(...arrays) {
    
 
     for (const element of first) {
-        return first;
-        let present = true
+      
+        let present = false
         for (const currentArr of rest ) {
             if (currentArr.includes(element)) {
-                present = false;
+                present = true;
             }
 
         }

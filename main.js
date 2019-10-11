@@ -5,7 +5,9 @@ const last = require('./exo03')
 const rest = require('./exo04')
 const flatten = require('./exo05')
 const without = require('./exo06')
+const union = require('./exo07')
 const intersection = require('./exo08')
+const difference = require('./exo09')
 const keys = require('./exo012')
 const values = require('./exo013')
 const pairs = require('./exo014')
@@ -16,7 +18,8 @@ const has = require('./exo018')
 const size = require('./exo019')
 const sample = require('./exo019')
 const map = require('./exo021')
-
+const isMatch = require('./exo025')
+const isRegExp = require('./exo028')
 // console.log("first :");
 // console.log(first([42,54,"hello",58,56]));
 // console.log(first([42,54,"hello",58,56],2));
@@ -83,8 +86,21 @@ const map = require('./exo021')
 // console.log(size([1,2,3,4,5]))
 // console.log(size({one: 1, two: 2, three: 3})    )
 
-console.log("sample :");
-console.log(sample([1,2,3,4,5,6]))
+// console.log("sample :");
+// console.log(sample([1,2,3,4,5,6]))
+
+// console.log("union :");
+// console.log(union([1,2,3,],[101,2,1,10],[2,1]))
+
+
+// console.log("isMatch :");
+// let stooge = {name: 'moe' , age : 32}
+
+// console.log(isMatch(stooge,{age:32}))
+
+
+console.log("isRegExp :");
+console.log(isRegExp(/moe/))
 
 
 
