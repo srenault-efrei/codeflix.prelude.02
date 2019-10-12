@@ -30,7 +30,7 @@ function pick(obj, ...options) {
     userId: 1337,
   }
   
-//   console.log(pick(user, 'name', 'age'))
+  console.log(pick(user, 'name', 'age'))
   console.log(
     pick(user, function(value, key) {
       return Number.isInteger(value) // retourne  vrai si la valeur est un nombre 

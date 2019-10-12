@@ -1,24 +1,24 @@
+  
 module.exports = function difference(...arrays) {
-   
-    let newArr = []
-    const [first,...rest] = arrays //ou arrays.shift() recupere le premier element et le reste (destructuration)
 
-   
+    let [first, ...rest] = arrays
+    let arr = []
 
-    for (const element of first) {
 
+
+    for (const firstEl of first) {
+        
         let present = false
-        for (const currentArr of rest ) {
-            if (currentArr.includes(element) == false) {
-                present = true;
+        for (const arrayRest of rest) {
+            if (arrayRest.includes(firstEl) == false) {
+                present = true
             }
-
         }
-        if(present){
-        newArr.push(element);
+        if (present) {
+            arr.push(firstEl)
         }
     }
-    return newArr
+   
+
+    return arr;
 }
-
-

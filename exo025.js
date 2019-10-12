@@ -1,26 +1,13 @@
 module.exports = function isMatch(object, properties) {
 
 
-let firstArray = Object.entries(object);
-let secondArray = Object.entries(properties);
-
-// console.log(firstArray);
-// console.log(secondArray);
-
-// for(first of  firstArray){
-//     console.log(first);
-//     for(second of secondArray){
-//         console.log(second);
-//         // if(first ===second){
-//         //     return true 
-//         // }
-//         // else{
-//         //     return false
-//         // }
-//     }
-// }
-
+    let boolean = false;
+    for (const [key, value] of Object.entries(properties)) {
+        if (object.hasOwnProperty(key) && value == object[key]) {
+            boolean = true
+        }
+    }
+    return boolean
 
 }
-
 
