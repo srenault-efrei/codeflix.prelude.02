@@ -5,7 +5,11 @@ const last = require('./exo03')
 const rest = require('./exo04')
 const flatten = require('./exo05')
 const without = require('./exo06')
+const union = require('./exo07')
 const intersection = require('./exo08')
+const difference = require('./exo09')
+const indexOf = require('./exo010')
+const lastIndexOf = require('./exo011')
 const keys = require('./exo012')
 const values = require('./exo013')
 const pairs = require('./exo014')
@@ -14,8 +18,15 @@ const invert = require('./exo015')
 const omit = require('./exo017')
 const has = require('./exo018')
 const size = require('./exo019')
-const sample = require('./exo019')
+const sample = require('./exo020')
 const map = require('./exo021')
+const mapBis = require('./exo021bis')
+const pluck = require('./exo022')
+const isArray = require('./exo023')
+const isObject = require('./exo024')
+const isMatch = require('./exo025')
+const isUndefined = require('./exo026')
+const isNull = require('./exo027')
 
 // console.log("first :");
 // console.log(first([42,54,"hello",58,56]));
@@ -45,8 +56,8 @@ const map = require('./exo021')
 // //  console.log(without([1,2,1,0,3,1,4],[0,1]));
 // console.log(without([1,2,1,0,3,1,4],0,1));
 
-// console.log("intersection :");
-// console.log(intersection([1,2,3],[101,2,1,10],[2,11]))
+console.log("intersection :");
+console.log(intersection([1,2,3],[101,2,1,10],[2,11]))
 
 // console.log("keys :");
 // console.log(keys({one: 1 , two :2, three :3}))
@@ -83,10 +94,48 @@ const map = require('./exo021')
 // console.log(size([1,2,3,4,5]))
 // console.log(size({one: 1, two: 2, three: 3})    )
 
-console.log("sample :");
-console.log(sample([1,2,3,4,5,6]))
+// console.log("sample :");
+// console.log(sample([1,2,3,4,5,6]))
+// console.log(sample([1,2,3,4,5,6],3))
+
+// console.log("map bis :");
+// console.log(mapBis([1, 2, 3], function (num) { return num * 3; }))
+// console.log(mapBis({ one: 1, two: 2, three: 3 }, function (num) { return num * 3; }))
 
 
+// console.log("pluck :");
+// const stooges = [{name: 'moe' , age: 40},{name:'larry', age :50},{name : 'curly', age: 60} ]
+// console.log(pluck(stooges,'name'));
+
+// console.log("isArray :");
+// console.log(isArray([1,2,3]));
+
+// console.log("isObject :");
+// console.log(isObject({}));
+// console.log(isObject(1));
+
+// console.log("isMatch :");
+// const stooge = {name : 'moe', age :32}
+// console.log(isMatch(stooge,{age : 32}));
+
+// console.log("isUndefined :");
+// console.log(isUndefined());
 
 
+// console.log("isNull :");
+// console.log(isNull(null));
+// console.log(isNull(undefined));
 
+
+// console.log("indexOf :");
+// console.log(indexOf([1,2,3,2],2));
+
+// console.log("lastIndexOf :");
+// console.log(lastIndexOf([1,2,3,2],2));
+
+
+console.log("union :");
+console.log(union([1,2,3],[101,2,1,10]));
+
+// console.log("difference :");
+// console.log(difference([1,2,3,4,5],[5,2,10]));
