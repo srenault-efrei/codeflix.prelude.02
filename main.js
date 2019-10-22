@@ -28,7 +28,7 @@
 // const isUndefined = require('./exo026')
 // const isNull = require('./exo027')
 const isRegExp = require('./exo028')
-
+const isFunction = require('./exo029')
 // console.log("first :");
 // console.log(first([42,54,"hello",58,56]));
 // console.log(first([42,54,"hello",58,56],2));
@@ -149,6 +149,7 @@ const isRegExp = require('./exo028')
 // console.log(isRegExp(/moe/));
 // console.log(isRegExp("d"));
 
-console.log(isRegExp(/moe/));
-console.log(isRegExp("d"));
+// let alertFunction = alert("salut")
+// console.log(isFunction(alertFunction));
+
 
